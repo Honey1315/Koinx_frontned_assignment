@@ -1,21 +1,33 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react';
+import greenarrow from '../../assets/svgs/greenarrow.svg'
+import redarrow from '../../assets/svgs/redarrow.svg'
+const Card = ({ name, imgurl, change }) => {
+  const [color, setColor] = useState("text-red-600");
+  const [path,setPath]=useState();
+  useEffect(() => {
+    if (parseFloat(change) >= 0) {
+      setColor("text-green-500");
+      setPath(greenarrow);
+    } else {
+      setColor("text-red-600");
+      setPath(redarrow);
+    }
+  }, [change]);
 
-const Card = ({name,imgurl,change}) => {
-  const [color,setColor]=useState("text-red-600");
-  if(change>=0) setColor("text-green-500");
-  console.log(change);
   return (
-    <div className='flex justify-between
-      p-2 mt-4'>
+    <div className='flex justify-between p-2 mt-4'>
       <div className='flex'>
-      <img className='border rounded-2xl' src={imgurl} height={24} width={24}></img>
-      <div className='pl-2'>
-        {name}
+        <img className='border rounded-2xl' src={imgurl} height={24} width={24} alt={name} />
+        <div className='pl-2'>{name}</div>
       </div>
+      <div className='flex justify-center items-center px-2 bg-bggreen'>
+        <div className='p-2'>
+          <img src={path}/>
+        </div>
+      <div className={color}>{Math.abs(change)}%</div>
       </div>
-      <div className={color}>{change}%</div>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
