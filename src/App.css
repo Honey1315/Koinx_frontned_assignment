@@ -1,0 +1,20 @@
+.mainContainer{
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-around;
+  background-color:#FFFFFF;
+}
+.temp{
+  width: 426px;
+  height: 515px;
+  padding: 31px, 16px, 31px, 16px;
+  border-radius: 8px;
+  gap: 19px;
+  /* border: solid red; */
+  background-color: #0052FE;
+  ;
+}
+.col1{
+  /* border: solid red; */
+  width: 70%;
+}
