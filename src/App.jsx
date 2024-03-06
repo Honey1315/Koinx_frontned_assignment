@@ -6,6 +6,7 @@ import TradingViewWidget from "./Components/TradingWidget/TradingViewWidget";
 import Panel from "./Components/Panel/Panel";
 import Performance from "./Components/Performance/Performance";
 import Trending from "./Components/Trending/Trending";
+import TeamSection from "./Components/TeamSection/TeamSection";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
           <TradingViewWidget />
           <Panel />
           <Performance />
+          <TeamSection/>
         </div>
         <div>
           <Advertisement />
