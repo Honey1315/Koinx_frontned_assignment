@@ -5,15 +5,12 @@ function TradingViewWidget() {
   const container = useRef();
 
   useEffect(() => {
-    // Check if a script with the same details exists
     const existingScript = Array.from(container.current.getElementsByTagName('script')).find(script =>
       script.src === "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js"
     );
 
-    // If the script already exists, return early
     if (existingScript) return;
 
-    // Otherwise, create and append the script
     const script = document.createElement("script");
     script.src = "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js";
     script.type = "text/javascript";
