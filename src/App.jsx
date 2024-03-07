@@ -39,6 +39,7 @@ function App() {
           <Panel />
           <Performance />
           <TeamSection/>
+          <PerformanceSection/>
         </div>
         <div>
           <Advertisement />
