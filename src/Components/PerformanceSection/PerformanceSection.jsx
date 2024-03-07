@@ -9,7 +9,7 @@ const PerformanceSection = () => {
             <div className="flex justify-between mb-8">
                 <span className="text-2xl font-bold">46,930.22</span>
                 <div className="p-4 w-[100%] flex justify-between items-center mb-4">
-                    <div className="flex-grow mx-4 w-[100%] bg-gradient-to-r from-red-500 via-orange-500 via-yellow-500 to-green-500 h-2 rounded"></div>
+                <div className="flex-grow mx-4 w-full bg-gradient-to-r from-red-500 via-yellow-400 to-green-500 h-2 rounded"></div>
                 </div>
                 <span className="text-2xl font-bold">49,343.83</span>
             </div>
@@ -17,7 +17,7 @@ const PerformanceSection = () => {
             <div className="flex justify-between mb-8">
                 <span className="text-2xl font-bold">46,930.22</span>
                 <div className="p-4 flex justify-between w-[100%] items-center mb-4">
-                    <div className="flex-grow mx-4 w-[100%] bg-gradient-to-r from-red-500 via-orange-500 via-yellow-500 to-green-500 h-2 rounded"></div>
+                    <div className="flex-grow mx-4 w-[100%] bg-gradient-to-r from-red-500 via-yellow-400 to-green-500 h-2 rounded"></div>
                 </div>
                 <span className="text-2xl font-bold">49,343.83</span>
             </div>

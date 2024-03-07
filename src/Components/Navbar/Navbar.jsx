@@ -14,7 +14,7 @@ const Navbar = () => {
     <button className=" bg-primaryBlue pl-8 pr-8 pb-2 pt-2
      text-white w-136 border rounded-md
       text-base font-semibold" onClick={()=>{
-        window.alert("Aur bsdk")
+        window.alert("Aur bhai")
     }}>Get Started</button>
     </div>
     </div>

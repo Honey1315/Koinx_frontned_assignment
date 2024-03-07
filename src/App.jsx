@@ -7,6 +7,10 @@ import Panel from "./Components/Panel/Panel";
 import Performance from "./Components/Performance/Performance";
 import Trending from "./Components/Trending/Trending";
 import btc from '../src/assets/pngs/btc.png'
+import TeamSection from "./Components/TeamSection/TeamSection";
+import PerformanceSection from "./Components/PerformanceSection/PerformanceSection";
+import { TrendingGraphs } from "./Components/TrendingGraphs/TrendingGraphs";
+import Sentiment from "./Components/Sentiment/Sentiment";
 function App() {
   const [datas, setDatas] = useState(null);
   useEffect(() => {
@@ -31,20 +35,35 @@ function App() {
         <div className="col1">
           <div className="flex-col">
             <div className="flex">
-            <img src={btc} className="border border-red-500 p-2 my-2"/>
-            <div className="flex justify-center items-center">Bitcoin</div>
+            <img src={btc} className="p-2 my-2"/>
+            <div className="flex justify-center items-center text-2xl
+            font-semibold">Bitcoin</div>
             </div>
           <TradingViewWidget />
           </div>
           <Panel />
-          <Performance />
-          <TeamSection/>
           <PerformanceSection/>
+          <Performance />
+          <Sentiment/>
+          <TeamSection/>
         </div>
         <div>
           <Advertisement />
           <Trending />
         </div>
+        
+      </div>
+      <div className="m-3">
+      <div className=' text-2xl font-semibold px-8'>
+      You MAy Also Like
+      </div>
+      <TrendingGraphs/>
+      </div>
+    <div className="m-3">
+      <div className=' text-2xl font-semibold px-8'>
+      Trending Coins
+      </div>
+      <TrendingGraphs/>
       </div>
     </>
   );

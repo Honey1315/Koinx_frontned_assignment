@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import Card from "../Card/Card";
-
-const Trending = () => {
-  const [datas, setDatas] = useState(null);
+import React from 'react'
+import { useEffect, useState } from 'react';
+import TrendingCards from '../Card/TrendingCards';
+export const TrendingGraphs = () => {
+const [datas, setDatas] = useState(null);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -16,22 +16,23 @@ const Trending = () => {
       }
     };
     fetchData();
+    console.log(datas);
   }, []);
-
   return (
-    <div className="flex flex-col p-4 bg-white mt-5 border rounded-2xl">
-      <div className="font-semibold text-2xl">Trending Coins (24h)</div>
+    <div className='flex-col justify-between p-2'>
+        <div className='flex'>
       {datas &&
-        datas.coins.slice(0, 3).map((coin, index) => (
-          <Card
+        datas.coins.slice(0, 7).map((coin, index) => (
+          <TrendingCards
             key={index}
             name={coin.item.name}
             imgurl={coin.item.small}
             change={coin.item.data.price_change_percentage_24h.usd.toFixed(2)}
+            currprice={coin.item.data.price}
+            graphurl={coin.item.data.sparkline}
           />
         ))}
-    </div>
-  );
-};
-
-export default Trending;
+        </div>
+      </div>
+  )
+}

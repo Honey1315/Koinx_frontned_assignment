@@ -4,7 +4,7 @@ import logo from '../../assets/svgs/Frame.svg'
 const Advertisement = () => {
   return (
     <>
-    <div className=" bg-primaryBlue w-96 h-fit text-center border rounded-lg
+    <div className=" bg-primaryBlue w-96 h-fit text-center border rounded-lg mt-5
       ">
         <div className="flex flex-col items-center w-426 h-515 p-8 gap-4">
       <div className="text-2xl p-5 font-bold text-white
