@@ -7,6 +7,7 @@ import Panel from "./Components/Panel/Panel";
 import Performance from "./Components/Performance/Performance";
 import Trending from "./Components/Trending/Trending";
 import TeamSection from "./Components/TeamSection/TeamSection";
+import PerformanceSection from "./Components/PerformanceSection/PerformanceSection";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
           <Panel />
           <Performance />
           <TeamSection/>
+          <PerformanceSection/>
         </div>
         <div>
           <Advertisement />
