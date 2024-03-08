@@ -14,6 +14,7 @@ export default {
         'custom-bg': '#EBF9F4',
         'bggreen1': '#0FBA83',
         'bgblue': '#0082FF',
+        'gray2': '#3E424A',
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],

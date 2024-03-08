@@ -16,10 +16,11 @@ const [datas, setDatas] = useState(null);
       }
     };
     fetchData();
-    console.log(datas);
+    // console.log(datas);
   }, []);
   return (
-    <div className='flex-col justify-between p-2'>
+    
+    <div className='flex-col justify-between p-2 mx'>
         <div className='flex'>
       {datas &&
         datas.coins.slice(0, 7).map((coin, index) => (

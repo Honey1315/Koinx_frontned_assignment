@@ -11,6 +11,7 @@ import TeamSection from "./Components/TeamSection/TeamSection";
 import PerformanceSection from "./Components/PerformanceSection/PerformanceSection";
 import { TrendingGraphs } from "./Components/TrendingGraphs/TrendingGraphs";
 import Sentiment from "./Components/Sentiment/Sentiment";
+import About from "./Components/About/About";
 function App() {
   const [datas, setDatas] = useState(null);
   useEffect(() => {
@@ -31,8 +32,8 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="mainContainer">
-        <div className="col1">
+      <div className="flex mt-10 justify-around bg-bggreen max-xl:flex-col ">
+        <div className="col1 ">
           <div className="flex-col">
             <div className="flex">
             <img src={btc} className="p-2 my-2"/>
@@ -45,9 +46,11 @@ function App() {
           <PerformanceSection/>
           <Performance />
           <Sentiment/>
+          <About/>
+          {/* <Tokenomics/> */}
           <TeamSection/>
         </div>
-        <div>
+        <div className="max-lg:justify-center max-lg:items-center">
           <Advertisement />
           <Trending />
         </div>

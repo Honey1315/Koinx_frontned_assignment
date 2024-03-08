@@ -17,7 +17,7 @@ const TrendingCards = ({ name, imgurl, change, currprice, graphurl }) => {
             setBgcolor('bg-bgred');
         }
     }, [change]);
-    console.log(currprice);
+    console.log(graphurl);
 
     return (
         <div className='flex flex-col m-1 items-center justify-around
@@ -37,7 +37,7 @@ const TrendingCards = ({ name, imgurl, change, currprice, graphurl }) => {
                 {currprice}
             </div> */}
             <div className={`flex items-center rounded-md`}>
-                <img src={graphurl} className='p-2 h-fit w-full'/>
+                <img crossOrigin='anonymous' src={graphurl} className='p-2 h-fit w-full'/>
             </div>
         </div>
     );

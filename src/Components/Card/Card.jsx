@@ -15,7 +15,7 @@ const Card = ({ name, imgurl, change }) => {
   }, [change]);
 
   return (
-    <div className='flex justify-between p-2 mt-4'>
+    <div className='flex justify-between p-2 mt-4 max-lg:justify-normal'>
       <div className='flex'>
         <img className='border rounded-2xl' src={imgurl} height={24} width={24} alt={name} />
         <div className='pl-2'>{name}</div>

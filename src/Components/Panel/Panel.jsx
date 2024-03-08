@@ -9,9 +9,8 @@ const panel = () => {
         return id===btnid ? 'underline text-underblue' : '';
     };
   return (
-    <>
     <div className='flex justify-between text-base text-panelcolor
-    font-medium font-sans button-6 p-4'>
+    font-medium font-sans button-6 p-4 my-5'>
         <button id='1' onClick={handleButtonClick} className={determineStyle('1')}>Overview</button>
         <button id='2' onClick={handleButtonClick} className={determineStyle('2')}>Fundamentals</button>
         <button id='3' onClick={handleButtonClick} className={determineStyle('3')}>News Insights</button>
@@ -20,7 +19,6 @@ const panel = () => {
         <button id='6' onClick={handleButtonClick} className={determineStyle('6')}>Technicals</button>
         <button id='7' onClick={handleButtonClick} className={determineStyle('7')}>Tokenomics</button>
     </div>
-    </>
   )
 }
 

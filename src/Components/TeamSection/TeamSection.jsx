@@ -5,7 +5,7 @@ const TeamSection = () => {
   const [team,setTeam] = useState(teamData);
   console.log(team)
   return (
-    <div className="rounded-lg bg-white py-8">
+    <div className="rounded-lg bg-white py-8 my-6">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl font-bold mb-4">Team</h2>
         <p className="text-gray-600 mb-8">
